@@ -1,0 +1,68 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f14;
+  color: #f0f0f0;
+  overflow: hidden;
+}
+
+#desktop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/wallpapers/cyber.jpg') no-repeat center center/cover;
+}
+
+.window {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  background: rgba(0,0,0,0.7);
+  border: 1px solid #0ff;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px #0ff;
+  overflow: hidden;
+}
+
+.window-header {
+  background: rgba(0,0,0,0.9);
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: move;
+}
+
+.close-btn {
+  background: #ff004f;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.taskbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.taskbar-icon {
+  margin-right: 15px;
+  padding: 5px 10px;
+  background: #0ff2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.taskbar-icon:hover {
+  transform: scale(1.2);
+}
