@@ -2,34 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NeoDesk - Portfolio OS</title>
+  <title>Neo3D Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="desktop">
-    <div id="wallpaper"></div>
-    
-    <div id="taskbar">
-      <div class="taskbar-icon" data-app="about">About</div>
-      <div class="taskbar-icon" data-app="projects">Projects</div>
-      <div class="taskbar-icon" data-app="terminal">Terminal</div>
-      <div class="taskbar-icon" data-app="contact">Contact</div>
-    </div>
+  <!-- 3D canvas -->
+  <canvas id="three-canvas"></canvas>
 
-    <!-- Example App Window -->
-    <div class="window" id="about" style="display:none;">
-      <div class="window-header">
-        <span>About Me</span>
-        <button class="close-btn">×</button>
-      </div>
-      <div class="window-content">
-        <h2>Hi, I'm Your Name!</h2>
-        <p>I build cool interactive websites and web apps.</p>
-      </div>
-    </div>
+  <!-- Overlay panel -->
+  <div id="project-panel" class="hidden">
+    <button id="close-btn">×</button>
+    <h2 id="project-title"></h2>
+    <p id="project-desc"></p>
+    <a id="project-link" href="#" target="_blank">View Project</a>
   </div>
 
-  <script src="js/desktop.js"></script>
-  <script src="js/apps.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
+
