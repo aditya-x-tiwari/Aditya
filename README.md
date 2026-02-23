@@ -1,4 +1,4 @@
-# What this repo is about
+# What This Is About
 This repository contains the source code for my personal website.
 It’s a focused, fast, and intentionally built space on the internet —
 where I present my work, thinking, and long-term projects.
